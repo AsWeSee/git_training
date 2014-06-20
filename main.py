@@ -1,8 +1,13 @@
 import sys
 import random
-import massiv
+from massiv import *
 
-print(sys.argv, massiv.block)
+print(sys.argv)
 
-massiv.print_mas(1,massiv.block[0]+1)
-print(massiv.print_mas.train)
+mas = []
+for x in range(10):
+    mas.append(x*x)
+    if mas[x] % 2 == 0:
+        print(x,mas[x])
+
+print_mas(block[0],block[1])
